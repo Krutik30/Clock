@@ -17,9 +17,9 @@ function BLength(){
     return (
         <div className="d-inline">
             <h2>Break Length</h2>
-            <button className="d-inline btn btn-warning" onClick={increament}>⬆️</button>
-            <div className="d-inline px-3">{Blength}</div>
-            <button className='d-inline btn btn-warning' onClick={decreament}>⬇️</button>
+            <i className="fa fa-arrow-up fa-2x" onClick={increament}></i>
+            <div className="d-inline px-4 ">{Blength}</div>
+            <i className="fa fa-arrow-down fa-2x" onClick={decreament}></i>
         </div>
     )
 }

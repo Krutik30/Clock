@@ -1,12 +1,12 @@
 import { useState } from "react";
+import Countdown from 'react-countdown';
 
 function Screen(){
 
-    const [timet , setTimer] = useState("00:00:00")
 
     return (
         <div>
-            <div>{}</div>
+            <Countdown date={Date.now()} />
         </div>
     )
 
