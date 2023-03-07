@@ -12,6 +12,7 @@ function SbSet(props){
         if (p.sessionT > 1) {
             p.setSessionT(p.sessionT-1);
         }
+        console.log("pass "+p.sessionT);
     }
     function handleBreakIncreament(){
         if (p.breakT < 60) {
