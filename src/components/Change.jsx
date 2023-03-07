@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "./Button";
-import SbSet from "./sbSet";
+import SbSet from "./SbSet";
 import Time from "./Time";
 
 function Change(){
