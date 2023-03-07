@@ -1,24 +1,24 @@
 import { useState } from "react";
+import { Button } from "./Button";
+import SbSet from "./sbSet";
+import Time from "./Time";
 
 function Change(){
 
-    const [Slength , setSLength] = useState(5);
+    const [sessionT , setSessionT] = useState(25);
+    const [breakT  , setBreakT] = useState(5);
+    const [currentT , setCurrentT] = useState('Session');
+    const [play, setPlay] = useState(false);
 
-    function increament(){
-        if(Slength < 60){
-            setSLength(Slength+1);
-        }
-    }
+    const passObj = {sessionT,breakT,setSessionT,setBreakT,currentT,setCurrentT,play,setPlay}
 
-    function decreament(){
-        if(Slength > 1){
-            setSLength(Slength-1);
-        }
-    }
+
 
     return (
         <div>
-
+            <SbSet props={passObj} />
+            <Time passObj ={passObj} />
+            <Button passObj={passObj}/>
         </div>
     )
 }

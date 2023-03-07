@@ -1,20 +1,14 @@
 import { useState } from 'react'
-import Header from './components/Header';
-import BLength from './components/BLength';
-import SLength from './components/SLength';
-import Screen from './components/Screen';
 import './App.css'
+import Change from './components/Change'
+import Header from './components/Header'
 
 function App() {
   
   return (
     <div className='text-center'>
       <Header />
-      <div>
-        <BLength />
-        <SLength />
-      </div>
-      <Screen />
+      <Change />
     </div>
   )
 }
